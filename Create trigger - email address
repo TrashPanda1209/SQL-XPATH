@@ -1,0 +1,12 @@
+CREATE OR REPLACE FUNCTION generate_email() RETURNS TRIGGER AS
+$$
+BEGIN
+  NEW.email := CONCAT(NEW.imie, '.', NEW.nazwisko, '@mail.com.pl');
+  RETURN NEW;
+END
+$$ LANGUAGE 'plpgsql';
+
+CREATE TRIGGER generate_email
+BEFORE INSERT ON reader
+FOR EACH ROW EXECUTE FUNCTION
+generate_email();
