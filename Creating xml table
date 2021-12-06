@@ -1,0 +1,110 @@
+CREATE TABLE bookstore (id int, tresc xml);
+
+INSERT INTO bookstore VALUES(
+'1',
+'<bookstore>
+<book category="COOKING">
+ <title lang="en">Everyday Italian</title>
+ <author>Giada De Laurentiis</author>
+ <year>2005</year>
+ <price>30.00</price>
+</book>
+<book category="CHILDREN">
+ <title lang="en">Harry Potter</title>
+ <author>J K. Rowling</author>
+ <year>2005</year>
+ <price>29.99</price>
+</book>
+<book category="WEB">
+ <title lang="en">XQuery Kick Start</title>
+ <author>James McGovern</author>
+ <author>Per Bothner</author>
+ <author>Kurt Cagle</author>
+ <author>James Linn</author>
+ <author>Vaidyanathan Nagarajan</author>
+ <year>2003</year>
+ <price>49.99</price>
+</book>
+<book category="WEB">
+ <title lang="en">Learning XML</title>
+ <author>Erik T. Ray</author>
+ <year>2003</year>
+ <price>39.95</price>
+</book>
+</bookstore>');
+
+INSERT INTO bookstore VALUES(
+'2',
+'<bookstore>
+<book category="SCIENCE">
+ <title lang="en">Everyday Math</title>
+ <author>Bryan de Palma</author>
+ <year>2015</year>
+ <price>300.00</price>
+</book>
+<book category="CHILDREN">
+ <title lang="en">Harry Potter</title>
+ <author>J K. Rowling</author>
+ <year>2005</year>
+ <price>35.00</price>
+</book>
+<book category="EDUCATION">
+ <title lang="en">XML Postresql</title>
+ <author>John McCornic</author>
+ <author>Raul Lozano</author>
+ <author>Kurt Cobain</author>
+ <year>2013</year>
+ <price>149.99</price>
+</book>
+<book category="WEB">
+ <title lang="en">Learning PHP</title>
+ <author>Erik T. Ray</author>
+ <year>2004</year>
+ <price>40.00</price>
+</book>
+</bookstore>');
+
+INSERT INTO bookstore VALUES(
+'3',
+'<bookstore>
+<book category="SCIENCE">
+ <title lang="pl">Podstawowy kurs z baz danych</title>
+ <author>Krzysztof Stencel</author>
+ <year>2015</year>
+ <price>30.00</price>
+</book>
+<book category="SCIENCE">
+ <title lang="pl">Algorytmy i struktury danych</title>
+ <author>Thomas Cormen</author>
+ <author>Charles Leiserson </author>
+ <author>Ronald Rivest</author>
+ <author>Stein Clifford </author>
+ <year>2002</year>
+ <price>420.00</price>
+</book>
+<book category="EDUCATION">
+ <title lang="pl">Analiza matemtyczna</title>
+ <author>W. Krysicki</author>
+ <author>L. Włodarski</author>
+ <year>2013</year>
+ <price>149.99</price>
+</book>
+<book category="EDUCATION">
+ <title lang="en">MySQL</title>
+ <author>Erik T. Ray</author>
+ <year>2004</year>
+ <price>40.00</price>
+</book>
+<book category="CHILDREN">
+ <title lang="pl">Detektyw Pozytywka</title>
+ <author>Grzegorz Kasdepke</author>
+ <year>2004</year>
+ <price>40.00</price>
+</book>
+<book category="CHILDREN">
+ <title lang="pl">Powrót detektywa Pozytywki</title>
+ <author>Grzegorz Kasdepke</author>
+ <year>2005</year>
+ <price>45.00</price>
+</book>
+</bookstore>');
