@@ -1,0 +1,7 @@
+CREATE OR REPLACE FUNCTION generate_number(id_reader INTEGER, id_bibl INTEGER) RETURNS VARCHAR AS
+$$
+BEGIN
+	RETURN LPAD(id_reader::text,7,'0') || '.' || LPAD(id_bibl::text,3,'0');
+END
+$$
+LANGUAGE plpgsql;
